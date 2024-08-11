@@ -1,0 +1,132 @@
+.about_container {
+  width: 100%;
+  display: flex;
+  background: #f9f9f9;
+}
+
+.about_container .about_img {
+  width: 40%;
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.about_container .about_content {
+  width: 60%;
+  flex: 2;
+  padding: 20px;
+  margin: auto 20px;
+  clear: both;
+}
+.about_content p {
+  padding: 10px 0;
+  line-height: 30px;
+}
+.boxes_wrap {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  max-width: 800px;
+  /* justify-content: space-between; */
+}
+.boxes_wrap .wrap {
+  position: relative;
+  width: 25%;
+  min-width: 240px;
+  height: 240px;
+  background: #fff;
+  filter: drop-shadow(1px 2px 3px #ccc);
+  margin: 20px 0;
+}
+.boxes_wrap .box {
+  width: 100%;
+  height: 100%;
+  /* box-shadow: 1px 2px 3px #ccc; */
+  overflow: hidden;
+  border: 1px solid var(--primary-color-dark);
+  border-radius: 10px;
+  position: relative;
+}
+
+.boxes_wrap .box h4 {
+  width: 100%;
+  height: 30px;
+  background: var(--primary-color-dark);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shapset {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  background: var(--primary-color-dark);
+  bottom: 20px;
+  right: -10px;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 0px 5px 0px;
+}
+
+.small_angle {
+  width: 10px;
+  height: 40px;
+  background: rgb(0, 0, 59);
+  bottom: 26px;
+  right: -10px;
+  transform: skewY(20deg);
+  border-style: none;
+  margin-top: -10px;
+  margin-right: 0.4px;
+  z-index: 2;
+  position: absolute;
+}
+
+.boxes_wrap .box p {
+  padding: 0 10px;
+  box-sizing: content-box;
+}
+
+.boxes_wrap .values ul li {
+  list-style: disc;
+}
+
+.join_us {
+  display: flex;
+  background: #fff;
+  box-shadow: 1px 2px 3px #ccc, -1px -2px 3px #e9e9e9;
+  padding: 5px 20px;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  border-radius: 20px;
+
+  p {
+    flex: 1;
+    min-width: 350px;
+  }
+
+  .action_button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  button {
+    padding: 10px 20px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 2px 3px #ccc;
+    cursor: pointer;
+  }
+}
+
+.text-width {
+  max-width: 800px;
+}

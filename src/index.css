@@ -1,0 +1,121 @@
+:root {
+  --primary-color: #0000ff; /* Blue */
+  --secondary-color: #ff0000; /* Red */
+
+  /* Optional: additional colors for consistency */
+  --primary-color-light: #add8e6; /* Light Blue */
+  --primary-color-dark: #00008b; /* Dark Blue */
+  --secondary-color-light: #ff6347; /* Light Red (Tomato) */
+  --secondary-color-dark: #8b0000; /* Dark Red */
+
+  /* Optional: additional design variables */
+  --background-color: #ffffff; /* White */
+  --text-color: #000000; /* Black */
+  --font-family: "Arial, sans-serif";
+}
+
+.red_bg {
+  background: var(--secondary-color) !important;
+}
+.red_bg-thick {
+  background: var(--secondary-color-dark);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+/* Example usage */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: var(--font-family);
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+nav a {
+  color: var(--primary-color);
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+}
+
+.link_white {
+  color: #fff;
+}
+
+.link_style {
+  text-decoration: none;
+  font-size: 15px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+button:hover {
+  background-color: var(--secondary-color-dark);
+}
+
+.text-bold {
+  font-weight: 600;
+}
+
+.text-spacing {
+  letter-spacing: 10px;
+}
+/* ----------------------Home styling------------------- */
+
+/* -------------animations----------------------- */
+@keyframes arrowanimate {
+  0% {
+    transform: translateX(0px);
+  }
+  40% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+}
+
+.shapset:hover .fa-arrow-right {
+  animation: arrowanimate 800ms infinite ease;
+}
+
+.explore_cont {
+  width: 200px;
+  height: 50px;
+
+  a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+}
+
+.home_Anouncement_section {
+  background: #f9f9f9;
+}
